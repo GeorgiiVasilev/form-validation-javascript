@@ -1,0 +1,54 @@
+:root {
+    --border-color: #d0d0d0;
+    --border-radius: 0.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+form {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem 2rem;
+}
+
+form input {
+    min-height: 1.5rem;
+    border: 1px solid #a0a0f5;
+    border-radius: var(--border-radius);
+    background-color: #f1f1fa;
+}
+
+form input:focus {
+    background-color: white;
+}
+
+form button {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    background-color: white;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+form button:hover {
+    background-color: #eae9e9;
+}
+
+.errors {
+    font-size: 12px;
+    color: red;
+}
